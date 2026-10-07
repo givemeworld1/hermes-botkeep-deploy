@@ -1,0 +1,23 @@
+# Botkeep deployment configuration for Hermes Agent
+# This tells Botkeep how to build and run the Hermes messaging gateway.
+
+# Use the Dockerfile for building the image
+dockerfile: Dockerfile
+
+# Environment variables (sensitive values stored as Botkeep Secrets)
+env:
+  # DISCORD_TOKEN: set via Botkeep Secrets UI (Discord bot token)
+  # TELEGRAM_TOKEN: set via Botkeep Secrets UI (Telegram bot token, optional)
+  # OPENAI_API_KEY: set via Botkeep Secrets UI (OpenAI API key, optional)
+  # ANTHROPIC_API_KEY: set via Botkeep Secrets UI (Anthropic API key, optional)
+  # GOOGLE_API_KEY: set via Botkeep Secrets UI (Google API key, optional)
+  # NODES_HOSTING_TOKEN: set via Botkeep Secrets UI (NexNode token, optional)
+  # HERMES_HOME: /app/.hermes-data (set in Dockerfile)
+
+# Optional: specify the Python version if Botkeep detects Python runtime
+# python_version: "3.11"
+
+# Health check (optional)
+# healthcheck:
+#   path: /health
+#   interval: 30
